@@ -30,7 +30,7 @@ function App() {
 
     try {
       // Send to our FastAPI backend
-      const response = await fetch("http://localhost:8000/analyse", {
+      const response = await fetch("https://resume-screener-backend-f8zj.onrender.com/analyse", { 
         method: "POST",
         body: formData,
       })
