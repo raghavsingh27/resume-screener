@@ -7,13 +7,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-client = Groq(api_key="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")
+client = Groq(api_key="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")
 
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
